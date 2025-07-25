@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>物品帶齊檢查系統</title>
+</head>
+<body>
+    <h1>請勾選今天要帶的東西，然後上傳照片</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="checkbox" name="items" value="手機"> 手機
+        <input type="checkbox" name="items" value="錢包"> 錢包
+        <input type="checkbox" name="items" value="鑰匙"> 鑰匙
+        <input type="checkbox" name="items" value="行動電源"> 行動電源
+        <input type="checkbox" name="items" value="帆布袋"> 帆布袋
+        <input type="checkbox" name="items" value="水壺"> 水壺
+        <input type="checkbox" name="items" value="眼鏡"> 眼鏡
+        <br><br>
+        <input type="file" name="file" required>
+        <input type="submit" value="上傳並檢查">
+    </form>
+</body>
+</html>
